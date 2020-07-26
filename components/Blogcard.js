@@ -1,6 +1,5 @@
 import React from "react";
 import tinytime from 'tinytime'
-import { makeStyles } from "@material-ui/core/styles";
 import { List, ListItem, Button, Grid, Typography, Box } from "@material-ui/core";
 import Link from "../src/Link";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
@@ -8,16 +7,10 @@ import moment from 'moment'
 import _ from 'lodash'
 
 
-const useStyles = makeStyles((theme) => ({
-  post586: {
-    padding: 10,
-  },
-}));
 
 const postDateTemplate = tinytime('{MMMM} {DD}, {YYYY}')
 
 export default function Blogcard({ blog }) {
-  const classes = useStyles();
   const blogs = _.orderBy(blog, {'date': "11-10-2019"}, function(o) {
     return moment(o.date.format('MM-DD-YYYY'))
   }, ['asc'])
@@ -35,7 +28,7 @@ export default function Blogcard({ blog }) {
         {blogs.map((blog, idx) => {
           return (
             <ListItem key={blog.id}>
-              <div className={classes.post586}>
+              <div>
                 <Grid container spacing={1}>
                   <Grid item xs={12}>
                   <time dateTime={blog.date}>{postDateTemplate.render(new Date(blog.date))}</time>
