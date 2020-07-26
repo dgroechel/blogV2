@@ -2,9 +2,9 @@ import React from "react";
 import tinytime from 'tinytime'
 import { List, ListItem, Button, Grid, Typography, Box } from "@material-ui/core";
 //import Link from "../src/Link";
-import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import moment from 'moment'
 import _ from 'lodash'
+import NextBtn from "./NextBtn";
 
 
 
@@ -47,14 +47,7 @@ export default function Blogcard({ blog }) {
                     <Typography>{blog.description}</Typography>
                   </Grid>
                   <Grid item xs={12}>
-                    <Button
-
-                      href={`/blog/${blog.slug}`}
-                      endIcon={<ArrowForwardIcon />}
-                      aria-label= "Read More"
-                    >
-                      Continue Reading
-                    </Button>
+                    <NextBtn blog={blog} />
                   </Grid>
                 </Grid>
               </div>
