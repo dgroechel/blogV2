@@ -6,7 +6,6 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import theme from '../src/theme';
 import Router from 'next/router'
 import * as gtag from '../src/gtag'
-import './empty.scss'
 
 Router.events.on('routeChangeComplete', (url) => gtag.pageview(url))
 
