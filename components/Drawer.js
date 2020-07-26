@@ -18,6 +18,10 @@ const useStyles = makeStyles({
   },
   font: {
     fontFamily: 'Kalam'
+  },
+  hamburger: {
+    marginLeft: 'auto',
+    display: 'flex',
   }
 });
 
@@ -68,13 +72,15 @@ export default function SwipeableTemporaryDrawer() {
     <div>
       {['right'].map((anchor) => (
         <React.Fragment key={anchor}>
+          <div className={classes.hamburger}>
             <IconButton
-              className={classes.hamburger}
+              
               aria-label="menu"
               onClick={toggleDrawer(anchor, true)}
             >
               <MenuIcon />
             </IconButton>
+          </div>
          {/*  <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button> */}
           <SwipeableDrawer
             anchor={anchor}

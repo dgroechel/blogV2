@@ -1,3 +1,6 @@
+Sitemap: https://www.dgroechel.com/api/posts-sitemap
+
 User-agent: *
-Disallow: /_hcms/preview/
-Disallow: /hs/manage-preferences/
+Allow: /*
+
+Disallow: /api/*

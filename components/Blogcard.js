@@ -63,7 +63,7 @@ export default function Blogcard({ blog }) {
                       endIcon={<ArrowForwardIcon />}
                       aria-label= "Read More"
                     >
-                      Read More
+                      Continue Reading
                     </Button>
                   </Grid>
                 </Grid>

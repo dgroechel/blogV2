@@ -11,13 +11,23 @@ export default class MyDocument extends Document {
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.primary.main} />
           <link
+            rel="preconnect"
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
           />
           <link
+            rel="preconnect"
             href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap"
             rel="stylesheet"
           ></link>
+
+          <script
+            type="text/javascript"
+            id="hs-script-loader"
+            async
+            defer
+            src="//js.hs-scripts.com/6700363.js"
+          ></script>
         </Head>
         <body>
           <Main />
