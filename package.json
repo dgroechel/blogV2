@@ -17,7 +17,13 @@
     "react-dom": "latest",
     "react-typist": "^2.0.5",
     "sitemap": "^6.2.0",
-    "tinytime": "^0.2.6"
+    "tinytime": "^0.2.6",
+    "gray-matter": "^4.0.2",
+    "remark-highlight.js": "^6.0.0",
+    "remark-html": "^12.0.0",
+    "remark-parse": "^8.0.3",
+    "unified": "^9.1.0",
+    "uuid": "^8.2.0"
   },
   "scripts": {
     "dev": "next",
