@@ -6,6 +6,8 @@ import Blogcard from "../components/Blogcard";
 import WelcomeCard from "../components/WelcomeCard";
 import SubscribeForm from "../components/SubscribeForm";
 import Head from "next/head";
+import fs from "fs";
+import matter from "gray-matter";
 
 export default function Index(props) {
   return (
@@ -49,27 +51,25 @@ export default function Index(props) {
 }
 
 export async function getStaticProps() {
-  const fs = require("fs");
-  const matter = require("gray-matter");
-  const { v4: uuid } = require("uuid");
 
-  const files = fs.readdirSync(`${process.cwd()}/posts`, "utf-8");
+  const files = fs.readdirSync(`${process.cwd()}/posts`);
 
-  const blogs = files
-    .filter((fn) => fn.endsWith(".md"))
-    .map((fn) => {
-      const path = `${process.cwd()}/posts/${fn}`;
-      const rawContent = fs.readFileSync(path, {
-        encoding: "utf-8",
-      });
-      const { data } = matter(rawContent);
+  const blogs = files.map((filename) => {
+    const markdownWithMetadata = fs
+      .readFileSync(`posts/${filename}`)
+      .toString();
 
-      return { ...data, id: uuid() };
-    });
+    const { data } = matter(markdownWithMetadata);
 
-  // By returning { props: blogs }, the IndexPage component
-  // will receive `blogs` as a prop at build time
+    return {
+      slug: filename.replace(".md", ""),
+      ...data
+    };
+  });
+
   return {
-    props: { blogs },
+    props: {
+      blogs,
+    },
   };
 }
