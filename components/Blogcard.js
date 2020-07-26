@@ -2,10 +2,11 @@ import React from "react";
 import tinytime from 'tinytime'
 import { makeStyles } from "@material-ui/core/styles";
 import { List, ListItem, Button, Grid, Typography, Box } from "@material-ui/core";
-import Link from "../src/Link";
+import Link1 from "../src/Link";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import moment from 'moment'
 import _ from 'lodash'
+
 
 const useStyles = makeStyles((theme) => ({
   postDiv: {
@@ -45,10 +46,9 @@ export default function Blogcard({ blog }) {
                   </Grid>
                   <Grid item xs={12}>
                     <Typography
-                      component={Link}
+                      component={Link1}
                       href={`/blog/${blog.slug}`}
                       variant="h4"
-                      aria-label= {`https://www.dgroechel.com/${blog.title}`}
                     >
                       {blog.title}
                     </Typography>
@@ -58,7 +58,7 @@ export default function Blogcard({ blog }) {
                   </Grid>
                   <Grid item xs={12}>
                     <Button
-                      component={Link}
+                      component={Link1}
                       href={`/blog/${blog.slug}`}
                       endIcon={<ArrowForwardIcon />}
                       aria-label= "Read More"

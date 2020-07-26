@@ -1,6 +1,6 @@
 ---
 title: Seeing Success In Failure
-slug: Seeing-Success-In-Failure
+slug: seeing-Success-In-Failure
 date: "12-03-2019"
 description: "Hi, I’m David and I’m a failure. Let's stop right there - failure shouldn’t be a part of your vocabulary. It's negative and brings you down. I had a great conversation with a wise family member about failure over the holidays and thought I should share..." 
 ---
