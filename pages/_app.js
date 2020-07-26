@@ -6,16 +6,9 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import theme from '../src/theme';
 import Router from 'next/router'
 import * as gtag from '../src/gtag'
+import './empty.css'
 
 Router.events.on('routeChangeComplete', (url) => gtag.pageview(url))
-
-  Router.events.on('routeChangeComplete', (url) => {
-    const fileName = url.split('/')[1];
-    const linkTag = document.createElement('link');
-    linkTag.setAttribute('rel', 'stylesheet');
-    linkTag.setAttribute('href', `/_next/static/css/static/development/pages/${fileName}.js.css?ts=${new Date().valueOf()}`);
-    document.head.appendChild(linkTag);
-  });
 
 
 export default function MyApp(props) {
