@@ -12,10 +12,6 @@ const useStyles = makeStyles((theme) => ({
   postDiv: {
     padding: 10,
   },
-  title: {
-    align: "left !important"
-    
-  }
 }));
 
 const postDateTemplate = tinytime('{MMMM} {DD}, {YYYY}')
