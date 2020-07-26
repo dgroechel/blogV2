@@ -14,6 +14,7 @@ function BlogPostPage(props) {
        <meta property="og:type" content="article" />
        <meta property="og:title" content="David Groechel" />
        <meta property="og:description" content={props.blog.description} />
+       <meta property="og:image" content={props.blog.image} />
        <link rel="shortcut icon" href="/DG.ico" />
       </Head>
       <Container maxWidth="md">

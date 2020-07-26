@@ -17,6 +17,7 @@ export default function Index(props) {
         <meta property="og:url" content="https://www.dgroechel.com" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="David Groechel" />
+        <meta property="og:image" content="/DavidGroechelGreen.png" />
         <meta
           property="og:description"
           content="A personal blog by David Groechel. I like to write blog posts about tech, customer service, past experiences, and random musings"

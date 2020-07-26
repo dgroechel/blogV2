@@ -3,6 +3,7 @@ title: Blog Refresh- Why I Choose Next.js over Gatsby
 slug: Blog-Refresh-Why-I-Chose-Nextjs-Over-Gatsbyjs
 date: "07-"
 description: "I've been slacking on my blog posts. I had a goal of 12 for the year (one per month) and so far I have one post. ONE! This was partially due to the framework I was using to create the blog..."
+image: "/DG.png"
 ---
 
 <div>
