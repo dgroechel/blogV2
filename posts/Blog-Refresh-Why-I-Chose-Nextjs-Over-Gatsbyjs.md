@@ -42,7 +42,8 @@ Two simple reasons:
 It's as simple as that! Both platforms are great in their own ways and create blazingly fast websites but Next.js just worked for me. I'm not a huge fan of GraphQl for simple projects. Is Next.js overkill for a simple blog - absolutely! But if you know me I love going one to two steps beyond what is required and trying new technologies. 
 
 <div style="text-align:center">
-<img src="https://dgreshblog.s3.amazonaws.com/loveonHHISland.png" alt="Dgroechel.com New Performance" width="99%" height="99%"/>
+<img src="https://dgreshblog.s3.amazonaws.com/Screen+Shot+2020-07-26+at+5.02.04+PM.png" alt="Dgroechel.com New Performance" width="99%" height="99%"/>
+<p>Performance needs some work but is getting there! Much improved from the original create-react-app</p>
 </div>
 
 <h3>What do you think of the new blog? Leave a comment and let me know! </h3>
