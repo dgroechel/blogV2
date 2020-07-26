@@ -24,6 +24,7 @@ export default function Blogcard({ blog }) {
   const blogs = _.orderBy(blog, {'date': "11-10-2019"}, function(o) {
     return moment(o.date.format('MM-DD-YYYY'))
   }, ['asc'])
+
   return (
     <>
     <Box alignItems="left" alignContent="left">
@@ -47,6 +48,7 @@ export default function Blogcard({ blog }) {
                       component={Link}
                       href={`/blog/${blog.slug}`}
                       variant="h4"
+                      aria-label= {`https://www.dgroechel.com/${blog.title}`}
                     >
                       {blog.title}
                     </Typography>
@@ -59,6 +61,7 @@ export default function Blogcard({ blog }) {
                       component={Link}
                       href={`/blog/${blog.slug}`}
                       endIcon={<ArrowForwardIcon />}
+                      aria-label= "Read More"
                     >
                       Read More
                     </Button>

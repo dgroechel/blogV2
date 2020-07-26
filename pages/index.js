@@ -1,7 +1,5 @@
 import React from "react";
-import { Container, Typography, Grid } from "@material-ui/core";
-import Box from "@material-ui/core/Box";
-import Link from "../src/Link";
+import { Container, Grid } from "@material-ui/core";
 import Copyright from "../src/Copyright";
 import Navbar from "../components/Navbar";
 import Blogcard from "../components/Blogcard";
@@ -20,6 +18,10 @@ export default function Index(props) {
         <meta property="og:image" content="/DavidGroechelGreen.png" />
         <meta
           property="og:description"
+          content="A personal blog by David Groechel. I like to write blog posts about tech, customer service, past experiences, and random musings"
+        />
+         <meta
+          name="description"
           content="A personal blog by David Groechel. I like to write blog posts about tech, customer service, past experiences, and random musings"
         />
         <link rel="shortcut icon" href="/DG.ico" />

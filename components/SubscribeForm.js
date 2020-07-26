@@ -1,7 +1,7 @@
 import React from "react";
 import { Formik, Form, Field } from "formik";
 import { TextField } from "formik-material-ui";
-import { Button, CircularProgress, Grid, Typography } from "@material-ui/core";
+import { Button Grid, Typography } from "@material-ui/core";
 
 export default function SubscribeForm() {
   return (
@@ -41,6 +41,7 @@ export default function SubscribeForm() {
                       type="text"
                       fullWidth
                       variant="outlined"
+                      inputProps={{ 'aria-label': 'first name' }}
                     />
                   </Grid>
                   <Grid item md={5}>
@@ -51,6 +52,7 @@ export default function SubscribeForm() {
                       type="email"
                       fullWidth
                       variant="outlined"
+                      inputProps={{ 'aria-label': 'email' }}
                     />
                   </Grid>
                   <Grid item md={2}>
