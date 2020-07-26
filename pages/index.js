@@ -1,35 +1,13 @@
 import React from "react";
-import {
-  Container,
-  List,
-  ListItem,
-  Button,
-  Grid,
-  Typography,
-  Box,
-} from "@material-ui/core";
+import { Container, Grid } from "@material-ui/core";
 import Copyright from "../src/Copyright";
 import Navbar from "../components/Navbar";
+import Blogcard from "../components/Blogcard";
 import WelcomeCard from "../components/WelcomeCard";
 import SubscribeForm from "../components/SubscribeForm";
 import Head from "next/head";
-import tinytime from "tinytime";
-import Link from "../src/Link";
-import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
-import moment from "moment";
-import _ from "lodash";
-
-const postDateTemplate = tinytime('{MMMM} {DD}, {YYYY}')
 
 export default function Index(props) {
-  const blogs = _.orderBy(
-    props.blogs,
-    { date: "11-10-2019" },
-    function (o) {
-      return moment(o.date.format("MM-DD-YYYY"));
-    },
-    ["asc"]
-  );
   return (
     <div>
       <Head>
@@ -42,7 +20,7 @@ export default function Index(props) {
           property="og:description"
           content="A personal blog by David Groechel. I like to write blog posts about tech, customer service, past experiences, and random musings"
         />
-        <meta
+         <meta
           name="description"
           content="A personal blog by David Groechel. I like to write blog posts about tech, customer service, past experiences, and random musings"
         />
@@ -60,49 +38,7 @@ export default function Index(props) {
         >
           <WelcomeCard />
 
-          <Box alignItems="left" alignContent="left">
-            <Typography variant="h4">The Blog</Typography>
-          </Box>
-
-          <List>
-            {blogs.map((blog, idx) => {
-              return (
-                <ListItem key={blog.id}>
-                  <div>
-                    <Grid container spacing={1}>
-                      <Grid item xs={12}>
-                        <time dateTime={blog.date}>
-                          {postDateTemplate.render(new Date(blog.date))}
-                        </time>
-                      </Grid>
-                      <Grid item xs={12}>
-                        <Typography
-                          component={Link}
-                          href={`/blog/${blog.slug}`}
-                          variant="h4"
-                        >
-                          {blog.title}
-                        </Typography>
-                      </Grid>
-                      <Grid item xs={12}>
-                        <Typography>{blog.description}</Typography>
-                      </Grid>
-                      <Grid item xs={12}>
-                        <Button
-                          component={Link}
-                          href={`/blog/${blog.slug}`}
-                          endIcon={<ArrowForwardIcon />}
-                          aria-label="Read More"
-                        >
-                          Continue Reading
-                        </Button>
-                      </Grid>
-                    </Grid>
-                  </div>
-                </ListItem>
-              );
-            })}
-          </List>
+          <Blogcard blog={props.blogs} />
           <SubscribeForm />
         </Grid>
 
