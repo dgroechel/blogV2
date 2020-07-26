@@ -9,6 +9,16 @@ import * as gtag from '../src/gtag'
 
 Router.events.on('routeChangeComplete', (url) => gtag.pageview(url))
 
+if (ENV === 'development' || ENV === 'local') {
+  Router.events.on('routeChangeComplete', (url) => {
+    const fileName = url.split('/')[1];
+    const linkTag = document.createElement('link');
+    linkTag.setAttribute('rel', 'stylesheet');
+    linkTag.setAttribute('href', `/_next/static/css/static/development/pages/${fileName}.js.css?ts=${new Date().valueOf()}`);
+    document.head.appendChild(linkTag);
+  });
+}
+
 export default function MyApp(props) {
   const { Component, pageProps } = props;
 
