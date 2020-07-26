@@ -9,7 +9,7 @@ import _ from 'lodash'
 
 
 const useStyles = makeStyles((theme) => ({
-  postDiv: {
+  post586: {
     padding: 10,
   },
 }));
@@ -35,7 +35,7 @@ export default function Blogcard({ blog }) {
         {blogs.map((blog, idx) => {
           return (
             <ListItem key={blog.id}>
-              <div className={classes.postDiv}>
+              <div className={classes.post586}>
                 <Grid container spacing={1}>
                   <Grid item xs={12}>
                   <time dateTime={blog.date}>{postDateTemplate.render(new Date(blog.date))}</time>
