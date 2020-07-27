@@ -61,6 +61,7 @@ export default function Blogcard({ blog }) {
                       href="/blog/[slug]"
                       as={`/blog/${blog.slug}`}
                       endIcon={<ArrowForwardIcon />}
+                      ariaLabel="Read More"
                     >
                       Continue Reading
                     </Button>
