@@ -1,8 +1,8 @@
-import React, {Fragment} from "react";
+import React, { Fragment } from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheets } from "@material-ui/core/styles";
 import theme from "../src/theme";
-import { GA_TRACKING_ID } from '../src/gtag'
+import { GA_TRACKING_ID } from "../src/gtag";
 
 export default class MyDocument extends Document {
   render() {
@@ -20,15 +20,23 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           ></link>
 
-<Fragment>
-              {/* Global Site Tag (gtag.js) - Google Analytics */}
-              <script
-                async
-                src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-              />
-              <script
-                dangerouslySetInnerHTML={{
-                  __html: `
+          <script
+            type="text/javascript"
+            id="hs-script-loader"
+            async
+            defer
+            src="//js.hs-scripts.com/6700363.js"
+          ></script>
+
+          <Fragment>
+            {/* Global Site Tag (gtag.js) - Google Analytics */}
+            <script
+              async
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+            />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
@@ -37,9 +45,9 @@ export default class MyDocument extends Document {
                       page_path: window.location.pathname,
                     });
                   `,
-                }}
-              />
-            </Fragment>
+              }}
+            />
+          </Fragment>
         </Head>
         <body>
           <Main />
