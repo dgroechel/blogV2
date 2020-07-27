@@ -8,7 +8,7 @@ import {
   Typography,
   Box,
 } from "@material-ui/core";
-import Link from "../src/Link";
+import Link from "next/link";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import moment from "moment";
 import _ from "lodash";
@@ -43,9 +43,9 @@ export default function Blogcard({ blog }) {
                     </time>
                   </Grid>
                   <Grid item xs={12}>
-                    <Link href="/blog/[slug]" as={`/blog/${blog.slug}`}>
-                      <Typography variant="h4">{blog.title}</Typography>
-                    </Link>
+                    <Typography color="primary" variant="h4">
+                      {blog.title}
+                    </Typography>
                   </Grid>
                   <Grid item xs={12}>
                     <Typography>{blog.description}</Typography>
