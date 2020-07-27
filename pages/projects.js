@@ -44,7 +44,7 @@ export default function projects() {
         />
         <link rel="shortcut icon" href="/DG.ico" />
       </Head>
-      <Container size="md">
+      <Container maxWidth="md">
         <Navbar />
         <div className={classes.title}>
           <Typography variant="h4" component="h1" gutterBottom>
