@@ -21,13 +21,13 @@ export default function Copyright() {
           </Typography>
         </Grid>
         <Grid item xs={6}>
-          <IconButton rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/dgroechel/" style={{float: "right"}}>
+          <IconButton aria-label="Instagram" rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/dgroechel/" style={{float: "right"}}>
             <InstagramIcon />
           </IconButton>
-          <IconButton rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/dgroechel/" style={{float: "right"}}>
+          <IconButton aria-label="LinkedIn"  rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/dgroechel/" style={{float: "right"}}>
             <LinkedInIcon />
           </IconButton>
-          <IconButton rel="noopener noreferrer" target="_blank" href="https://github.com/dgroechel" style={{float: "right"}}>
+          <IconButton aria-label="GitHub"  rel="noopener noreferrer" target="_blank" href="https://github.com/dgroechel" style={{float: "right"}}>
             <GitHubIcon />
           </IconButton>
         </Grid>
