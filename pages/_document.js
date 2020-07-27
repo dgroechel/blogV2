@@ -11,6 +11,10 @@ export default class MyDocument extends Document {
         <Head>
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.primary.main} />
+          <meta
+            name="description"
+            content="A personal blog by David Groechel. I like to write blog posts about tech, customer service, past experiences, and random musings"
+          />
           <link
             rel="preconnect"
             rel="stylesheet"

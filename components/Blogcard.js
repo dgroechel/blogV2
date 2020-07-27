@@ -45,8 +45,9 @@ export default function Blogcard({ blog }) {
                   <Grid item xs={12}>
                     <Typography
                       component={Link}
-                      href={`/blog/${blog.slug}`}
+                      href="/blog/[slug]"
                       variant="h4"
+                      as={`/blog/${blog.slug}`}
                     >
                       {blog.title}
                     </Typography>
@@ -57,7 +58,8 @@ export default function Blogcard({ blog }) {
                   <Grid item xs={12}>
                     <Button
                       component={Link}
-                      href={`/blog/${blog.slug}`}
+                      href="/blog/[slug]"
+                      as={`/blog/${blog.slug}`}
                       endIcon={<ArrowForwardIcon />}
                     >
                       Continue Reading
