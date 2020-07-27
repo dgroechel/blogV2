@@ -45,7 +45,7 @@ export default function Blogcard({ blog }) {
                   <Grid item xs={12}>
                     <Typography
                       component={Link}
-                      href="/blog/[slug]"
+                      href={`/blog/${blog.slug}`}
                       as={`/blog/${blog.slug}`}
                       variant="h4"
                     >
@@ -60,7 +60,7 @@ export default function Blogcard({ blog }) {
                       component={Link}
                       endIcon={<ArrowForwardIcon />}
                       aria-label="Read More"
-                      href="/blog/[slug]"
+                      href={`/blog/${blog.slug}`}
                       as={`/blog/${blog.slug}`}
                     >
                       Continue Reading
