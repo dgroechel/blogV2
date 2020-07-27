@@ -10,9 +10,9 @@ function BlogPostPage(props) {
     <div>
       <Head>
        <title>Blog | {props.blog.title}</title> 
-       <meta property="og:url" content="https://www.dgroechel.com" />
+       <meta property="og:url" content={`https://www.dgroechel.com/posts/${props.blog.slug}`} />
        <meta property="og:type" content="article" />
-       <meta property="og:title" content="David Groechel" />
+       <meta property="og:title" content={`Blog | ${props.blog.title}`} />
        <meta property="og:description" content={props.blog.description} />
        <link rel="shortcut icon" href="/DG.ico" />
       </Head>
