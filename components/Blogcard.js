@@ -52,12 +52,13 @@ export default function Blogcard({ blog }) {
                   </Grid>
                   <Grid item xs={12}>
                     <Link href="/blog/[slug]" as={`/blog/${blog.slug}`} passHref>
-                      <Button
+                      <a>Continue Reading <ArrowForwardIcon /> </a>
+                      {/* Button
                         endIcon={<ArrowForwardIcon />}
                         aria-label="Read More"
                       >
                         Continue Reading
-                      </Button>
+                      </Button> */}
                     </Link>
                   </Grid>
                 </Grid>
