@@ -36,6 +36,7 @@ export default function Index(props) {
           <WelcomeCard />
 
           <Blogcard blog={props.blogs} />
+          <br/>
           <SubscribeForm />
         </Grid>
 

@@ -51,7 +51,7 @@ export default function ButtonAppBar() {
             <Link href="/">
               <a>
                 <img
-                  style={{ width: "36%", height: "36%" }}
+                  style={{ width: "40%", height: "40%" }}
                   src="/DavidGroechelGreen.png"
                   alt="David Groechel"
                 />

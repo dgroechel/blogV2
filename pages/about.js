@@ -63,7 +63,7 @@ export default function About() {
         </Typography>
 
         <Grid container justify="center" alignItems="center" >
-          <Grid item md={4}>
+          <Grid item md={6}>
             <a
               title="ZEIT / CC BY-SA (https://creativecommons.org/licenses/by-sa/4.0)"
               href="https://commons.wikimedia.org/wiki/File:Nextjs-logo.svg"
@@ -74,7 +74,7 @@ export default function About() {
               />
             </a>
           </Grid>
-          <Grid item md={4}>
+          <Grid item md={6}>
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -92,18 +92,6 @@ export default function About() {
                 }}
                 alt="React-icon"
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png"
-              />
-            </a>
-          </Grid>
-          <Grid item md={4}>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://aws.amazon.com/what-is-cloud-computing"
-            >
-              <img
-                src="https://d0.awsstatic.com/logos/powered-by-aws.png"
-                alt="Powered by AWS Cloud Computing"
               />
             </a>
           </Grid>
