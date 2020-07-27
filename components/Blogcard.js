@@ -43,28 +43,23 @@ export default function Blogcard({ blog }) {
                     </time>
                   </Grid>
                   <Grid item xs={12}>
-                    <Typography
-                      component={Link}
-                      href="/blog/[slug"
-                      as={`/blog/${blog.slug}`}
-                      variant="h4"
-                    >
-                      {blog.title}
-                    </Typography>
+                    <Link href="/blog/[slug]" as={`/blog/${blog.slug}`}>
+                      <Typography variant="h4">{blog.title}</Typography>
+                    </Link>
                   </Grid>
                   <Grid item xs={12}>
                     <Typography>{blog.description}</Typography>
                   </Grid>
                   <Grid item xs={12}>
-                    <Button
-                      component={Link}
-                      endIcon={<ArrowForwardIcon />}
-                      aria-label="Read More"
-                      href="/blog/[slug"
-                      as={`/blog/${blog.slug}`}
-                    >
-                      Continue Reading
-                    </Button>
+                    <Link href="/blog/[slug]" as={`/blog/${blog.slug}`}>
+                      <Button
+                        component={Link}
+                        endIcon={<ArrowForwardIcon />}
+                        aria-label="Read More"
+                      >
+                        Continue Reading
+                      </Button>
+                    </Link>
                   </Grid>
                 </Grid>
               </div>
