@@ -51,7 +51,7 @@ export default function Blogcard({ blog }) {
                     <Typography>{blog.description}</Typography>
                   </Grid>
                   <Grid item xs={12}>
-                    <Link href="/blog/[slug]" as={`/blog/${blog.slug}`}>
+                    <Link href="/blog/[slug]" as={`/blog/${blog.slug}`} passHref>
                       <Button
                         endIcon={<ArrowForwardIcon />}
                         aria-label="Read More"
