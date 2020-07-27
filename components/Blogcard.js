@@ -8,7 +8,7 @@ import {
   Typography,
   Box,
 } from "@material-ui/core";
-import Link from "next/link";
+import Link from '../src/Link'
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import moment from "moment";
 import _ from "lodash";
@@ -43,22 +43,23 @@ export default function Blogcard({ blog }) {
                     </time>
                   </Grid>
                   <Grid item xs={12}>
+                  <Link href="/blog/[slug]" as={`/blog/${blog.slug}`} naked>
                     <Typography color="primary" variant="h4">
                       {blog.title}
                     </Typography>
+                    </Link>
                   </Grid>
                   <Grid item xs={12}>
                     <Typography>{blog.description}</Typography>
                   </Grid>
                   <Grid item xs={12}>
-                    <Link href="/blog/[slug]" as={`/blog/${blog.slug}`} passHref>
-                      <a>Continue Reading <ArrowForwardIcon /> </a>
-                      {/* Button
+                  <Link href="/blog/[slug]" as={`/blog/${blog.slug}`} naked>
+                      <Button
                         endIcon={<ArrowForwardIcon />}
                         aria-label="Read More"
                       >
                         Continue Reading
-                      </Button> */}
+                      </Button>
                     </Link>
                   </Grid>
                 </Grid>
