@@ -67,7 +67,7 @@ export default function SubscribeForm() {
                         type="text"
                         fullWidth
                         variant="outlined"
-                        ariaLabel="First Name"
+                        inputProps={{ "aria-label": "First Name" }}
                       />
                     </Grid>
                     <Grid item md={5}>
@@ -78,7 +78,7 @@ export default function SubscribeForm() {
                         type="email"
                         fullWidth
                         variant="outlined"
-                        ariaLabel="Email"
+                        inputProps={{ "aria-label": "email" }}
                       />
                     </Grid>
                     <Grid item md={2}>
