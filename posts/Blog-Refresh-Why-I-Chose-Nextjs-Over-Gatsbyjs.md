@@ -1,7 +1,7 @@
 ---
 title: Blog Refresh- Why I Choose Next.js over Gatsby
 slug: Blog-Refresh-Why-I-Chose-Nextjs-Over-Gatsbyjs
-date: "07-"
+date: "07-27-2020"
 description: "I've been slacking on my blog posts. I had a goal of 12 for the year (one per month) and so far I have one post. ONE! This was partially due to the framework I was using to create the blog..."
 ---
 
@@ -40,10 +40,14 @@ Two simple reasons:
 </ol>
 It's as simple as that! Both platforms are great in their own ways and create blazingly fast websites but Next.js just worked for me. I'm not a huge fan of GraphQl for simple projects. Is Next.js overkill for a simple blog - absolutely! But if you know me I love going one to two steps beyond what is required and trying new technologies. 
 
-<div style="text-align:center">
-<img src="https://dgreshblog.s3.amazonaws.com/loveonHHISland.png" alt="Dgroechel.com New Performance" width="99%" height="99%"/>
-</div>
+<br/>
 
-<h3>What do you think of the new blog? Leave a comment and let me know! </h3>
+<div style="text-align:center, padding-top: 10">
+<img src="https://dgreshblog.s3.amazonaws.com/Screen+Shot+2020-07-27+at+12.13.09+PM.png" alt="Dgroechel.com New Performance" width="99%" height="99%"/>
+</div>
+<br/>
+<p align="center">The new blog is much improved but can still use some perfomance tweaks.</p>
+
+<h2 align="center">What do you think of the new blog? Leave a comment and let me know! </h2>
 
 </div>
