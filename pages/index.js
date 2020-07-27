@@ -67,6 +67,6 @@ export async function getStaticProps() {
   // By returning { props: blogs }, the IndexPage component
   // will receive `blogs` as a prop at build time
   return {
-    props: { blogs },
+    props: { blogs }, 
   };
 }
