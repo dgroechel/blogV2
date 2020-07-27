@@ -13,7 +13,7 @@ export default async (req, res) => {
     // Create each URL row
     posts.forEach(post => {
       smStream.write({
-        url: `/blog/${post.slug}`,
+        url: `/posts/${post.slug}`,
         changefreq: 'daily',
         priority: 0.9
       });
