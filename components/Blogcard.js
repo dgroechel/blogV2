@@ -53,7 +53,6 @@ export default function Blogcard({ blog }) {
                   <Grid item xs={12}>
                     <Link href="/blog/[slug]" as={`/blog/${blog.slug}`}>
                       <Button
-                        component={Link}
                         endIcon={<ArrowForwardIcon />}
                         aria-label="Read More"
                       >
