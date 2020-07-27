@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://dgroechel.com/</loc>
+  <lastmod>2020-07-27T18:50:28+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://dgroechel.com/about</loc>
+  <lastmod>2020-07-27T18:50:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dgroechel.com/projects</loc>
+  <lastmod>2020-07-27T18:50:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dgroechel.com/blog/Blog-Refresh-Why-I-Chose-Nextjs-Over-Gatsbyjs</loc>
+  <lastmod>2020-07-27T18:50:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dgroechel.com/blog/How-COVID-19-Will-Change-the-Way-We-Work-and-How-Companies-Retain-Talent</loc>
+  <lastmod>2020-07-27T18:50:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dgroechel.com/blog/Seeing-Success-In-Failure</loc>
+  <lastmod>2020-07-27T18:50:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dgroechel.com/blog/Advice-I-Would-Give-My-College-Self</loc>
+  <lastmod>2020-07-27T18:50:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
