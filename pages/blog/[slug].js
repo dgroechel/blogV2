@@ -67,7 +67,7 @@ export async function getStaticProps(context) {
 }
 
 // generate HTML paths at build time
-export async function getStaticPaths(context) {
+export async function getStaticPaths() {
   const fs = require("fs");
 
   const path = `${process.cwd()}/posts`;
