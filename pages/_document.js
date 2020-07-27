@@ -12,10 +12,12 @@ export default class MyDocument extends Document {
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.primary.main} />
           <link
+            rel="preconnect"
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
           />
           <link
+            rel="preconnect"
             href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap"
             rel="stylesheet"
           ></link>
@@ -31,6 +33,8 @@ export default class MyDocument extends Document {
           <Fragment>
             {/* Global Site Tag (gtag.js) - Google Analytics */}
             <script
+              async
+              defer
               async
               src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
             />

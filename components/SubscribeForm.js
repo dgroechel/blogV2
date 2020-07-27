@@ -67,6 +67,7 @@ export default function SubscribeForm() {
                         type="text"
                         fullWidth
                         variant="outlined"
+                        aria-label="First Name"
                       />
                     </Grid>
                     <Grid item md={5}>
@@ -77,6 +78,7 @@ export default function SubscribeForm() {
                         type="email"
                         fullWidth
                         variant="outlined"
+                        aria-label="Email"
                       />
                     </Grid>
                     <Grid item md={2}>

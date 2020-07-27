@@ -60,7 +60,7 @@ export default function Blogcard({ blog }) {
                       href={`/blog/${blog.slug}`}
                       endIcon={<ArrowForwardIcon />}
                     >
-                      Read More
+                      Continue Reading
                     </Button>
                   </Grid>
                 </Grid>
