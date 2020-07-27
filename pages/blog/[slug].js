@@ -22,6 +22,7 @@ function BlogPostPage(props) {
       <section
         dangerouslySetInnerHTML={{ __html: props.blog.content }}
       ></section>
+      <br/>
       <Divider />
       <SubscribeForm />
       <Copyright/>
