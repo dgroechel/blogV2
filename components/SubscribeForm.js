@@ -25,7 +25,13 @@ export default function SubscribeForm() {
           Thanks for Your Submission!
         </Typography>
       ) : (
-        <Grid container spacing={1}>
+        <Grid
+          container
+          spacing={1}
+          container
+          justify="center"
+          alignItems="center"
+        >
           <Grid item md={12}>
             <Typography variant="h5" style={{ color: "#00701a" }}>
               Subscribe for the latest posts.
