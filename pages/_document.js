@@ -16,11 +16,15 @@ export default class MyDocument extends Document {
             content="A personal blog by David Groechel. I like to write blog posts about tech, customer service, past experiences, and random musings"
           />
           <link
+            async
+            defer
             rel="preconnect"
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
           />
           <link
+            async
+            defer
             rel="preconnect"
             href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap"
             rel="stylesheet"
