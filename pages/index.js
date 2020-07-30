@@ -1,13 +1,12 @@
 import React from "react";
-import { Container, Typography, Grid } from "@material-ui/core";
-import Box from "@material-ui/core/Box";
-import Link from "../src/Link";
+import { Container, Grid } from "@material-ui/core";
 import Copyright from "../src/Copyright";
 import Navbar from "../components/Navbar";
 import Blogcard from "../components/Blogcard";
 import WelcomeCard from "../components/WelcomeCard";
 import SubscribeForm from "../components/SubscribeForm";
 import Head from "next/head";
+
 
 export default function Index(props) {
   return (

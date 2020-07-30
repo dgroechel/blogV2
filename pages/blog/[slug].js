@@ -5,6 +5,7 @@ import Copyright from "../../src/Copyright";
 import SubscribeForm from "../../components/SubscribeForm";
 import Head from 'next/head'
 
+
 function BlogPostPage(props) {
   return (
     <div>
