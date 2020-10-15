@@ -10,6 +10,7 @@ import _ from 'lodash'
 const useStyles = makeStyles((theme) => ({
   postDiv: {
     padding: 10,
+    contentVisibility: "auto"
   },
   title: {
     align: "left !important"

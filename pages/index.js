@@ -36,7 +36,7 @@ export default function Index(props) {
 
           <Blogcard blog={props.blogs} />
           <br/>
-          <SubscribeForm />
+          <SubscribeForm style={{contentVisibility: "auto"}} />
         </Grid>
 
         <Copyright />
