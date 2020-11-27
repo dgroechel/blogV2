@@ -1,5 +1,4 @@
 import React from "react";
-import tinytime from "tinytime";
 import { makeStyles } from "@material-ui/core/styles";
 import {
   List,
@@ -37,9 +36,6 @@ export default function Blogcard({ blog }) {
     return 0;
   });
 
-
-
-  console.log(blogs);
   return (
     <>
       <Box alignItems="left" alignContent="left">
