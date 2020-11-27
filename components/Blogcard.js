@@ -1,47 +1,61 @@
 import React from "react";
-import tinytime from 'tinytime'
+import tinytime from "tinytime";
 import { makeStyles } from "@material-ui/core/styles";
-import { List, ListItem, Button, Grid, Typography, Box } from "@material-ui/core";
+import {
+  List,
+  ListItem,
+  Button,
+  Grid,
+  Typography,
+  Box,
+} from "@material-ui/core";
 import Link from "../src/Link";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
-import moment from 'moment'
-import _ from 'lodash'
+import _ from "lodash";
+import dayjs from "dayjs";
 
 const useStyles = makeStyles((theme) => ({
   postDiv: {
     padding: 10,
-    contentVisibility: "auto"
+    contentVisibility: "auto",
   },
   title: {
-    align: "left !important"
-    
-  }
+    align: "left !important",
+  },
 }));
 
-const postDateTemplate = tinytime('{MMMM} {DD}, {YYYY}')
+
 
 export default function Blogcard({ blog }) {
   const classes = useStyles();
-  const blogs = _.orderBy(blog, {'date': "11-10-2019"}, function(o) {
-    return moment(o.date.format('MM-DD-YYYY'))
-  }, ['asc'])
+
+  const blogs = blog.sort(function (a, b) {
+    var keyA = a.date;
+    var keyB = b.date;
+    if (keyA < keyB) return 1;
+    if (keyA > keyB) return -1;
+    return 0;
+  });
+
+
+
+  console.log(blogs);
   return (
     <>
-    <Box alignItems="left" alignContent="left">
-    <Typography variant="h4">
-      The Blog
-    </Typography>
-    </Box>
-   
-    
-       <List>
+      <Box alignItems="left" alignContent="left">
+        <Typography variant="h4">The Blog</Typography>
+      </Box>
+
+      <List>
         {blogs.map((blog, idx) => {
           return (
             <ListItem key={blog.id}>
               <div className={classes.postDiv}>
                 <Grid container spacing={1}>
                   <Grid item xs={12}>
-                  <time dateTime={blog.date}>{postDateTemplate.render(new Date(blog.date))}</time>
+                    <time dateTime={blog.date}>
+                      {dayjs(blog.date).format("MMMM D, YYYY")}
+                    </time>
                   </Grid>
                   <Grid item xs={12}>
                     <Typography
@@ -72,7 +86,7 @@ export default function Blogcard({ blog }) {
             </ListItem>
           );
         })}
-      </List> 
+      </List>
     </>
   );
 }

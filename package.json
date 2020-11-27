@@ -3,21 +3,19 @@
   "version": "4.0.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "latest",
+    "@material-ui/core": "^4.11.1",
     "@material-ui/icons": "^4.9.1",
     "axios": "^0.19.2",
     "clsx": "latest",
-    "formik": "^2.1.5",
+    "dayjs": "^1.9.6",
+    "formik": "^2.2.5",
     "formik-material-ui": "^2.0.1",
-    "lodash": "^4.17.19",
-    "moment": "^2.27.0",
-    "next": "^9.5.0",
+    "next": "^10.0.3",
     "next-google-fonts": "^1.2.1",
     "prop-types": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "react-typist": "^2.0.5",
-    "tinytime": "^0.2.6"
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-typist": "^2.0.5"
   },
   "scripts": {
     "dev": "next",
@@ -30,7 +28,7 @@
     "remark-highlight.js": "^6.0.0",
     "remark-html": "^12.0.0",
     "remark-parse": "^8.0.3",
-    "unified": "^9.1.0",
-    "uuid": "^8.3.0"
+    "unified": "^9.2.0",
+    "uuid": "^8.3.1"
   }
 }

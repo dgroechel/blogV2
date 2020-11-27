@@ -4,8 +4,9 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Button from "@material-ui/core/Button";
 import Link1 from "../src/Link";
-import Link from "next/link";
+
 import Drawer from "./Drawer";
+import Image from "next/image";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -48,15 +49,12 @@ export default function ButtonAppBar() {
           style={{ background: "transparent", boxShadow: "none" }}
         >
           <Toolbar>
-            <Link href="/">
-              <a>
-                <img
-                  style={{ width: "58%", height: "58%" }}
-                  src="/DavidGroechelGreen.png"
-                  alt="David Groechel"
-                />
-              </a>
-            </Link>
+            <Image
+              width="250"
+              height="50"
+              src="/DavidGroechelGreen.png"
+              alt="David Groechel"
+            />
 
             <div className={classes.menuButton}>
               <Button component={Link1} href="/about">

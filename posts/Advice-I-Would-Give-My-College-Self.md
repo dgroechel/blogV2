@@ -1,7 +1,7 @@
 ---
 title: Advice I Would Give My College Self
 slug: Advice-I-Would-Give-My-College-Self
-date: "11-10-2019"
+date: "20191110"
 description: "I recently joined a mentorship program for Michigan State University’s Broad College of Business called the Wisdom Project. You get paired with a student and they interview you asking about your college experience, time after college..."
 
 ---

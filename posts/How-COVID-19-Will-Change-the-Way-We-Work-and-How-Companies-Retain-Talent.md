@@ -1,7 +1,7 @@
 ---
 title: How COVID-19 Will Change the Way We Work and How Companies Retain Talent
 slug: How-COVID-19-Will-Change-the-Way-We-Work-and-How-Companies-Retain-Talent
-date: "03-16-2020"
+date: "20200316"
 description: "I’m sure most of you reading this today are sitting on your couch at home or a desk if you’re lucky enough to have one. For those of you who didn’t work remotely before this past week or so, this may have been the first time ..."
 ---
 
