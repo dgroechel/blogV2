@@ -43,9 +43,9 @@ export default function Index(props) {
 }
 
 export async function getStaticProps() {
-  const fs = require("fs");
-  const matter = require("gray-matter");
-  const { v4: uuid } = require("uuid");
+  import fs from "fs";
+  import matter from "gray-matter";
+  import { v4 as uuidv4 } from "uuid";
 
   const files = fs.readdirSync(`${process.cwd()}/posts`, "utf-8");
 
@@ -58,7 +58,7 @@ export async function getStaticProps() {
       });
       const { data } = matter(rawContent);
 
-      return { ...data, id: uuid() };
+      return { ...data, id: uuidv4() };
     });
 
   // By returning { props: blogs }, the IndexPage component
