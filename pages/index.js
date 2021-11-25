@@ -4,9 +4,7 @@ import Copyright from "../src/Copyright";
 import Navbar from "../components/Navbar";
 import Blogcard from "../components/Blogcard";
 import WelcomeCard from "../components/WelcomeCard";
-import SubscribeForm from "../components/SubscribeForm";
 import Head from "next/head";
-
 
 export default function Index(props) {
   return (
@@ -35,8 +33,7 @@ export default function Index(props) {
           <WelcomeCard />
 
           <Blogcard blog={props.blogs} />
-          <br/>
-          <SubscribeForm style={{contentVisibility: "auto"}} />
+          <br />
         </Grid>
 
         <Copyright />
@@ -67,6 +64,6 @@ export async function getStaticProps() {
   // By returning { props: blogs }, the IndexPage component
   // will receive `blogs` as a prop at build time
   return {
-    props: { blogs }, 
+    props: { blogs },
   };
 }
