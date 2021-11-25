@@ -5,7 +5,7 @@ import { Typography } from "@material-ui/core";
 export default class HeaderText extends Component {
   render() {
     return (
-      <div style={{ paddingBottom: 65, margin: 5 }}>
+      <div style={{ paddingBottom: 65, margin: 5, width: '100%', height: '150px' }}>
         <div>
           <Typist
             style={{ background: "#fafafa" }}
