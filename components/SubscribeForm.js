@@ -2,21 +2,9 @@ import React from "react";
 import { Formik, Form, Field } from "formik";
 import { TextField } from "formik-material-ui";
 import { Button, Grid, Typography } from "@material-ui/core";
-import Axios from "axios";
 
 export default function SubscribeForm() {
   const [sendForm, setSendForm] = React.useState(false);
-
-  async function submitForm(values) {
-    try {
-      Axios.post(
-        "https://8120hwmwch.execute-api.us-east-1.amazonaws.com/subscribe",
-        values
-      );
-    } catch (e) {
-      alert(e);
-    }
-  }
 
   return (
     <div style={{ padding: 30 }}>
@@ -50,7 +38,6 @@ export default function SubscribeForm() {
               }}
               onSubmit={(values, { setSubmitting }) => {
                 setTimeout(() => {
-                  submitForm(values);
                   setSendForm(true);
                   setSubmitting(false);
                 }, 500);
