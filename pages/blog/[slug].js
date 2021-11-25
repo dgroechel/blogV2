@@ -1,32 +1,40 @@
 import React from "react";
+import fs from "fs";
+import html from "remark-html";
+import highlight from "remark-highlight.js";
+import unified from "unified";
+import markdown from "remark-parse";
+import matter from "gray-matter";
 import Navbar from "../../components/Navbar";
 import { Container, Divider } from "@material-ui/core";
 import Copyright from "../../src/Copyright";
 import SubscribeForm from "../../components/SubscribeForm";
-import Head from 'next/head'
-
+import Head from "next/head";
 
 function BlogPostPage(props) {
   return (
     <div>
       <Head>
-       <title>Blog | {props.blog.title}</title> 
-       <meta property="og:url" content={`https://www.dgroechel.com/posts/${props.blog.slug}`} />
-       <meta property="og:type" content="article" />
-       <meta property="og:title" content={`Blog | ${props.blog.title}`} />
-       <meta property="og:description" content={props.blog.description} />
-       <link rel="shortcut icon" href="/DG.ico" />
+        <title>Blog | {props.blog.title}</title>
+        <meta
+          property="og:url"
+          content={`https://www.dgroechel.com/posts/${props.blog.slug}`}
+        />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={`Blog | ${props.blog.title}`} />
+        <meta property="og:description" content={props.blog.description} />
+        <link rel="shortcut icon" href="/DG.ico" />
       </Head>
       <Container maxWidth="md">
-      <Navbar />
-      <h1>{props.blog.title}</h1>
-      <section
-        dangerouslySetInnerHTML={{ __html: props.blog.content }}
-      ></section>
-      <br/>
-      <Divider />
-      <SubscribeForm />
-      <Copyright/>
+        <Navbar />
+        <h1>{props.blog.title}</h1>
+        <section
+          dangerouslySetInnerHTML={{ __html: props.blog.content }}
+        ></section>
+        <br />
+        <Divider />
+        <SubscribeForm />
+        <Copyright />
       </Container>
     </div>
   );
@@ -34,13 +42,6 @@ function BlogPostPage(props) {
 
 // pass props to BlogPostPage component
 export async function getStaticProps(context) {
-  const fs = require("fs");
-  const html = require("remark-html");
-  const highlight = require("remark-highlight.js");
-  const unified = require("unified");
-  const markdown = require("remark-parse");
-  const matter = require("gray-matter");
-
   const slug = context.params.slug; // get slug from params
   const path = `${process.cwd()}/posts/${slug}.md`;
 
@@ -69,8 +70,6 @@ export async function getStaticProps(context) {
 
 // generate HTML paths at build time
 export async function getStaticPaths(context) {
-  const fs = require("fs");
-
   const path = `${process.cwd()}/posts`;
   const files = fs.readdirSync(path, "utf-8");
 
