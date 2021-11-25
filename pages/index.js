@@ -1,5 +1,8 @@
 import React from "react";
 import { Container, Grid } from "@material-ui/core";
+import fs from "fs";
+import matter from "gray-matter";
+import { v4 as uuidv4 } from "uuid";
 import Copyright from "../src/Copyright";
 import Navbar from "../components/Navbar";
 import Blogcard from "../components/Blogcard";
@@ -43,10 +46,6 @@ export default function Index(props) {
 }
 
 export async function getStaticProps() {
-  import fs from "fs";
-  import matter from "gray-matter";
-  import { v4 as uuidv4 } from "uuid";
-
   const files = fs.readdirSync(`${process.cwd()}/posts`, "utf-8");
 
   const blogs = files
