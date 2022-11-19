@@ -10,7 +10,7 @@
     "dayjs": "^1.10.7",
     "formik": "^2.2.9",
     "formik-material-ui": "^3.0.1",
-    "next": "^12.0.4",
+    "next": "^12.3.3",
     "next-google-fonts": "^1.2.1",
     "prop-types": "latest",
     "react": "^17.0.2",
